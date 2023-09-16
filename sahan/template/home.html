@@ -1,7 +1,17 @@
-{% extends 'base.html'%}
+{% extends 'base.html'%} <!--extends home html to base.html-->
 
-{% block content %}
+{% block content %} <!--Jinja format -->
 
 <h1>Welcome To The Home Page ,{{name}}!!!!</h1>
+
+<form action="add">
+    <label>Enter 1st number</label>
+    <input type="text" name="num1"><br>
+    <label>Enter 2nd number</label>
+    <input type="text" name="num2"><br>
+    <input type="submit">
+
+
+</form>
 
 {% endblock %}
