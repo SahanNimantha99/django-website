@@ -4,4 +4,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return render(request,'home.html',{'name':'Sahan'}) #html page path
+    return render(request,'home.html',{'name':'Sahan'}) #html page path , name is dynamic
