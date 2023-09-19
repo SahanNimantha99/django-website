@@ -1,4 +1,5 @@
 {% load static %}
+<!--Can use base url instead of images-->
 {% static "images" as baseUrl %}
 <!DOCTYPE html>
 <html lang="en">
@@ -281,19 +282,19 @@
 						<div class="destinations_container item_grid">
 
 							{% for dest in dests %}
-							<!-- Destination -->
+							<!-- Destination , Start the loop by above code  -->
 							<div class="destination item">
 								<div class="destination_image">
-									<img src="{{baseUrl}}/{{dest.img}}" alt="">
+									<img src="{{baseUrl}}/{{dest.img}}" alt=""><!-- Image varies -->
 									<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
 								</div>
 								<div class="destination_content">
-									<div class="destination_title"><a href="destinations.html">{{dest.name}}</a>
+									<div class="destination_title"><a href="destinations.html">{{dest.name}}</a><!-- destination varies -->
 									</div>
 									<div class="destination_subtitle">
 										<p>{{dest.desc}}</p>
 									</div>
-									<div class="destination_price">From ${{dest.price}}</div>
+									<div class="destination_price">From ${{dest.price}}</div><!-- Price varies -->
 								</div>
 							</div>
 
